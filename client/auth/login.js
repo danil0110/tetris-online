@@ -2,14 +2,6 @@ const username = document.querySelector('#username');
 const password = document.querySelector('#password');
 const btnLogin = document.querySelector('#btn-login');
 
-const areSame = (v1, v2) => {
-	if (v1 === v2) {
-		return true;
-	}
-
-	return false;
-};
-
 const showError = message => {
 	let errorLabel;
 	if (!document.querySelector('.auth-error')) {
